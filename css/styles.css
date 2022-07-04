@@ -744,7 +744,6 @@ margin-bottom: 50px;
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
-
     color: var(--secondary-text-color);
     margin-bottom: 12px;
 }
@@ -802,7 +801,6 @@ margin-bottom: 50px;
     width: 448px;
     height: 120px;
     resize: none;
-
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -869,7 +867,6 @@ margin-bottom: 50px;
     width: 16px;
     height: 15px;
     margin-right: 8.38px;
-
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     border: 2px solid #000000;
@@ -884,10 +881,7 @@ margin-bottom: 50px;
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
