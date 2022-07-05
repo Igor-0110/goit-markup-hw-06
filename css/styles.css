@@ -110,7 +110,7 @@ img {
     border-radius: 2px;
     width: 100%;
     right: 0;
-    bottom: 0%;
+    bottom: -1px;
     background-color: var(--accent-color);
 }
 .contacts {
@@ -177,7 +177,8 @@ img {
     cursor: pointer;
     border-radius: 4px;
     padding: 10px 32px;
-    border: none;   
+    border: none;
+    transition: background-color var(--duration) var(--cubic-bezier);
 }
 .main-button:hover,
 .main-button:focus {
@@ -570,6 +571,7 @@ margin-bottom: 50px;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    cursor: pointer;
     background-color: #F5F4FA;
     transition: color var(--duration) var(--cubic-bezier),
         background-color var(--duration) var(--cubic-bezier),
@@ -718,10 +720,10 @@ margin-bottom: 50px;
     align-items: center;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--primary-white-color);
+    background-color: #fff;
     position: absolute;
-    top: 17px;
-    right: 17px;
+    top: 8px;
+    right: 8px;
     cursor: pointer;
 }
 
@@ -729,6 +731,11 @@ margin-bottom: 50px;
     height: 11px;
     width: 11px;
     fill: #000000;
+    transition: fill var(--duration) var(--cubic-bezier);
+}
+.modal-button:hover svg,
+.modal-button:focus svg {
+    fill: var(--accent-color);
 }
 .modal .form-call {
     display: flex;
@@ -839,6 +846,7 @@ margin-bottom: 50px;
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
     cursor: pointer;
+    transition: background-color var(--duration) var(--cubic-bezier);
 }
 
 .submit-button-modal:hover,
@@ -870,8 +878,8 @@ margin-bottom: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     border: 2px solid #000000;
-    transition: border-color var(--duration) var(--cubic-bezier);
-    transition: background-color var(--duration) var(--cubic-bezier);
+    transition: border-color var(--duration) var(--cubic-bezier),
+        background-color var(--duration) var(--cubic-bezier);
 }
 
 .check-agree {
